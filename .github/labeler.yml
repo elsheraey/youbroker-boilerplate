@@ -1,0 +1,11 @@
+backend:
+  - backend/**/*
+
+web:
+  - web/**/*
+
+database:
+  - database/**/*
+
+infrastructure:
+  - infrastructure/**/*

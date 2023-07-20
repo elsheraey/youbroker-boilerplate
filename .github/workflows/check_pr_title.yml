@@ -1,0 +1,19 @@
+jobs:
+  pr:
+    name: Check PR title
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+        uses: amannn/action-semantic-pull-request@v4
+        with:
+          requireScope: true
+          wip: false
+name: 'PR: Check Title'
+"on":
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - synchronize

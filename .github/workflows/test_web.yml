@@ -1,0 +1,25 @@
+name: Testing Web
+
+on:
+  push:
+    branches: [main]
+    paths: ["web/**"]
+  pull_request:
+    branches: [main]
+    paths: ["web/**"]
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  test_web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: yarn clean-install
+      - run: yarn build
+      - run: yarn test

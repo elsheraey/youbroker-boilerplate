@@ -7648,10 +7648,10 @@ ra-core@^4.3.3:
     react-is "^17.0.2"
     react-query "^3.32.1"
 
-ra-data-fakerest@^4.3.3:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/ra-data-fakerest/-/ra-data-fakerest-4.3.3.tgz#7838e51e78448881ec511cec7cf686c3f5bd1ef2"
-  integrity sha512-wFDKhmKigZOHoIU8ZLy6Okv4T+IdAq8LDzxyyZzYb+r52aJ1YAQs6q0VQuaZJXv/Is5NkGH/UgyqR+khC7xZXg==
+ra-data-fakerest@^4.12.1:
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/ra-data-fakerest/-/ra-data-fakerest-4.12.1.tgz#e4e4f44f78488b47242e821b88ce14a1a94bf6a6"
+  integrity sha512-u0MoOR/JlXB93OVCRvdjZaclGeWxEPfqe+TmA7VgKYPpjpHdvTkuau6HIxVYqkh6e4MYAKzHEj8DAHhSOr3sGw==
   dependencies:
     fakerest "^3.0.0"
 
